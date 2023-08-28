@@ -54,8 +54,6 @@ line-height: normal;
 }
 .btn{
   background-color: #E02C6D;
-  width: auto 200px;
-  height: auto 44px;
   border-radius: 41px;
   border: none;
   color: white;
@@ -202,4 +200,69 @@ line-height: 24px; /* 171.429% */
 }
 .footer span {
   color:#E02C6D;
+}
+/* responsive -///////////////////////////////////////// */
+@media screen and (min-width: 425px) and (max-width:576px) {
+  .nav {
+    flex-direction: column-reverse;
+    margin: 0 auto;
+  }
+  .items {
+    margin-bottom: 40px;
+  }
+  .banner {
+    flex-direction: column-reverse;
+    padding: 40px 20px;
+    text-align: center;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .banner-text {
+    margin-top: 40px;
+  }
+  .btn{
+    margin-left: 120px;
+  }
+  .banner-text{
+    margin-right: 0px;
+  }
+  /* logo section ---------------------------------------- */
+  .logo{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  margin: 0 30px;
+  width: 100%;  
+  }
+  .collection{
+ 
+    /* max-width: 100px; */
+    /* margin:20px auto; */
+  }
+  .collection-card{
+    display: flex;
+    flex-direction: column;
+    max-width:100%;
+  } 
+/* featured sections ------------------------------------- */
+.featured{
+  display: flex;
+flex-direction: column;
+  max-width: 100%;
+  align-items: center;
+  margin:20px auto;
+  gap: 50px;  
+}
+/* footer section -------------------------------------- */
+.footer{
+  background-color: #0A0826;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  max-width: 100%;
+}
 }
